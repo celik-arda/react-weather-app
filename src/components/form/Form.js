@@ -1,7 +1,8 @@
 import React from "react";
 import WeatherContext from "../contextProvider/ContextProvider";
 import {useContext, useState} from 'react';
-import allCities from '../../allCities.js'
+import allCities from '../../allCities.js';
+import formCss from './form.module.css';
 
 
 const Form = () => {
@@ -13,7 +14,7 @@ const Form = () => {
     }
 
     return (
-        <div>
+        <div className={formCss.form_area}>
             <form>
                 <select value={city} onChange={updateCity}>
                 {allCities.map(cityOption => {

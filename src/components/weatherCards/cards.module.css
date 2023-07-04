@@ -1,0 +1,60 @@
+.cards_area {
+    margin: auto;
+    width: 90vw;
+    height: 60vh;
+}
+
+.city_name {
+    line-height: 12vh;
+    font-size: 3em;
+    margin: 0;
+    color: #4FC0D0;
+}
+
+.weather_list {
+    padding-inline: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.weather_item {
+    background-color: #4FC0D0;
+    color: #164B60;
+    width: 20vw;
+    height: 44vh;
+    padding: 4vh 0;
+    box-sizing: border-box;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 0.8vw;
+    font-size: 2.3rem;
+    border: 1.8vh solid #4A55A2;
+    box-shadow: 2vh 2vh 8vh 1vh #20262E;
+}
+
+.weather_item_today {
+    background-color: #4FC0D0;
+    color: #164B60;
+    width: 20vw;
+    height: 44vh;
+    padding: 4vh 0;
+    box-sizing: border-box;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 0.8vw;
+    font-size: 2.3rem;
+    outline: none;
+    border: 1.8vh solid #A2FF86;
+    box-shadow: 2vh 2vh 8vh 1vh #20262E;
+}
+
+.weather_icon {
+    width: 33%;
+    aspect-ratio: 1;
+}

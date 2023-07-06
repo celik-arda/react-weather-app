@@ -1,33 +1,29 @@
-import React from "react";
-import WeatherContext from "../contextProvider/ContextProvider";
-import {useContext, useState} from 'react';
+import React, { useContext, useState } from 'react';
+import WeatherContext from '../contextProvider/ContextProvider';
+
 import allCities from '../../allCities.js';
 import formCss from './form.module.css';
 
+function Form() {
+  const { city, setCity } = useContext(WeatherContext);
 
-const Form = () => {
+  function updateCity(e) {
+    setCity(e.target.value);
+  }
 
-    const {city, setCity} = useContext(WeatherContext)
-
-    function updateCity(e) {
-        setCity(e.target.value);
-    }
-
-    return (
-        <div className={formCss.form_area}>
-            <form>
-                <select value={city} onChange={updateCity}>
-                {allCities.map(cityOption => {
-                    return (
-                        <option key={cityOption.id} value={cityOption.name}>
-                            {cityOption.name}
-                        </option>
-                    )
-                })}
-                </select>
-            </form>
-        </div>
-    )
-};
+  return (
+    <div className={formCss.form_area}>
+      <form>
+        <select value={city} onChange={updateCity}>
+          {allCities.map((cityOption) => (
+            <option key={cityOption.id} value={cityOption.name}>
+              {cityOption.name}
+            </option>
+          ))}
+        </select>
+      </form>
+    </div>
+  );
+}
 
 export default Form;

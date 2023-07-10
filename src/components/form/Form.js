@@ -1,7 +1,7 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import WeatherContext from '../contextProvider/ContextProvider';
 
-import allCities from '../../allCities.js';
+import allCities from '../../allCities';
 import formCss from './form.module.css';
 
 function Form() {

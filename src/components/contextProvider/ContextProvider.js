@@ -17,6 +17,7 @@ export function ContextProvider({ children }) {
     getData2();
   }, [city]);
 
+  // eslint-disable-next-line react/jsx-no-constructed-context-values
   const values = {
     city,
     setCity,

@@ -8,7 +8,7 @@ export function ContextProvider({ children }) {
 
   useEffect(() => {
     async function getData2() {
-      const data = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=____API__KEY____&q=${city}&aqi=no&days=3`);
+      const data = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=9ea3e167bec14f7aa5e90609241601&q=${city}&aqi=no&days=3`);
 
       const result = await data.json();
 
